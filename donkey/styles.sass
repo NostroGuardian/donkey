@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700&family=Russo+One&display=swap')
+
+$bg-color: #1E1E1E
+$logo1-color: #575F64
+$logo2-color: #7C8388
+$main-text-color: white
+$btn-color: #ECECF1
+$btn-border-color: #B5B5B8
+$btn-text-color:  #4C555A
+$copy-color: #3d3d3d
+
+*
+  padding: 0
+  margin: 0
+
+body
+  background-color: $bg-color
+  -ms-user-select: none
+  -moz-user-select: none
+  -webkit-user-select: none
+  user-select: none
+
+.logo
+  font-family: "Russo One", sans-serif
+  font-size: 42px
+  color: white
+  text-transform: uppercase
+  display: flex
+  align-items: center
+  justify-content: center
+  padding-top: 100px
+  cursor: default
+  .logo1
+    color: $logo1-color
+  .logo2
+    color: $logo2-color
+  img
+    height: 86px
+
+.main
+  color: $main-text-color
+  font-size: 48px
+  font-family: "Montserrat",sans-serif
+  font-weight: 300
+  display: flex
+  justify-content: center
+  padding-top: 100px
+  cursor: default
+  -ms-user-select: auto
+  -moz-user-select: auto
+  -webkit-user-select: auto
+  user-select: auto
+
+.btn
+  width: 300px
+  height: 80px
+  background-color: $btn-color
+  border-radius: 50px
+  display: flex
+  align-items: center
+  justify-content: center
+  font-family: "Montserrat", sans-serif
+  font-weight: 700
+  color: $btn-text-color
+  text-transform: uppercase
+  font-size: 26px
+  margin-left: auto
+  margin-right: auto
+  margin-top: 100px
+  cursor: pointer
+  border-bottom: 6px solid $btn-border-color
+
+.btn:active
+  border-bottom: none
+  margin-top: 106px
+
+.copy
+  font-family: "Montserrat", sans-serif
+  font-weight: 100
+  color: $copy-color
+  font-size: 18px
+  text-align: center
+  cursor: default
+  margin-top: 100px
+  position: absolute
+  transform: translateX(-50%)
+  bottom: 100px
+  left: 50%
+
+@media screen and (max-width: 500px)
+  .logo
+    font-size: 28px
+  .main
+    font-size: 24px
+    font-weight: 700
+    width: 90%
+    margin-left: auto
+    margin-right: auto
+    text-align: center
+  .btn
+    font-size: 18px
+    width: 200px
+    height: 60px
+  .copy
+    font-size: 16px
